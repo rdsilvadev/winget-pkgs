@@ -49,7 +49,7 @@ Function Invoke-KeypressMenu {
   }
 
   Write-Host "`n"
-  Write-Host -ForegroundColor 'Yellow' "$Prompt"
+  Write-Host -ForegroundColor 'Red' "$Prompt"
   if ($PSBoundParameters.ContainsKey('HelpText') -and (![string]::IsNullOrWhiteSpace($HelpText))) {
     if ($PSBoundParameters.ContainsKey('HelpTextColor') -and (![string]::IsNullOrWhiteSpace($HelpTextColor))) {
       Write-Host -ForegroundColor $HelpTextColor $HelpText
